@@ -2,13 +2,21 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PokemonCardComponent
   ],
   imports: [
-    BrowserModule
+    CommonModule,
+    BrowserModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
